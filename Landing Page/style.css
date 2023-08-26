@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar{
+    max-width: 100%;
+    max-height: 1000vh;
+    background-color: #fff
+}
+.logo{
+    cursor: pointer;
+}
+
+nav{
+    max-width: 100%;
+    max-height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 150px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 4rem;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 600;
+    color: #000;
+    transition: all .2s ease-in-out;
+}
+
+.active{
+    color:#FF007F;
+}
+
+a:hover{
+    color: #FF007F;
+}
+
+.home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    margin-top:60px ;
+    align-content: center;
+}
+
+.home img{
+    width: 400px;
+    z-index: 1;
+    border-radius: 50%;
+    border: 1px solid #0c8eff;
+    box-shadow: 0 0px 20px #0c8eff;
+    cursor: pointer;
+}
+
+.home-data{
+    text-align: center;
+}
+
+.home-data h1{
+    font-size: 3rem;
+    color: #FF007F;
+    margin-bottom: 1rem;
+}
+
+.home-data h2{
+    font-size: 2rem;
+    color: #3c3b36;
+    margin-bottom: 3rem;
+}
+
+.home-data .button{
+    padding: 10px 20px;
+    background-color: #FF007F;
+    color: #000;
+    border-radius: 6px;
+    transition: all 1500ms ease-in-out;
+}
+
+.home-data .button:hover{
+    background-color: #000;
+    color: #fff;
+    box-shadow: 0 0px 20px #FF007F;
+}
+
+.rotation{
+    position: absolute;
+    left:284px;
+    top: 166px;
+    background: transparent;
+    border: 1px solid #FF007F;
+    width: 450px;
+    height: 450px;
+    border-radius: 59% 41% 36% 64% / 41% 36% 64% 59%;
+    animation: rotation 15s linear infinite;
+    
+}
+
+.rotation2{
+    border: 1px solid #0c8eff;
+    border-radius: 59% 41% 36% 64% / 41% 36% 64% 59%;
+    animation: rotation2 15s linear infinite;
+}
+
+@keyframes rotation{
+    to{
+        rotate: 360deg;
+    }
+}
+@keyframes rotation2{
+    to{
+        rotate: -360deg;
+    }
+}
